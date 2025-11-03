@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSite Design - MAS PUGUH</title>
+
+  <!-- META CARD PREVIEW -->
+  <meta property="og:title" content="WebSite Design - Desain Website Profesional & Elegan">
+  <meta property="og:description" content="Layanan pembuatan website bisnis & UMKM dengan desain modern, lembut, dan profesional.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80">
+  <meta property="og:url" content="https://puguhjogja.alwaysdata.net">
+  <meta property="og:type" content="website">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f0f4f8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      color: #333;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+      max-width: 420px;
+      overflow: hidden;
+      transform: scale(0.9);
+      opacity: 0;
+      animation: fadeInUp 1s forwards ease-out;
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+
+    .card img {
+      width: 100%;
+      border-bottom: 3px solid #8ecae6;
+      transition: transform 0.5s ease;
+    }
+    .card:hover img { transform: scale(1.05); }
+
+    .card-content { padding: 22px; }
+
+    .card h2 {
+      font-size: 1.6rem;
+      color: #0077b6;
+      margin-bottom: 12px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .links { margin-top: 18px; animation: fadeIn 1.5s ease forwards; }
+    .links a {
+      display: block;
+      background: #8ecae6;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .links a:hover { background: #219ebc; transform: translateY(-3px); }
+
+    .share-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      animation: fadeIn 1.8s ease forwards;
+    }
+
+    .share-buttons a, .share-buttons button {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .wa { background: #25D366; color: #fff; }
+    .wa:hover { background: #20ba57; }
+
+    .mail { background: #EA4335; color: #fff; }
+    .mail:hover { background: #d93025; }
+
+    .copy { background: #6c63ff; color: #fff; }
+    .copy:hover { background: #554ef7; }
+
+    .contact {
+      margin-top: 25px;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      animation: fadeIn 2s ease forwards;
+    }
+    .contact a { color: #0077b6; text-decoration: none; font-weight: 500; }
+
+    #notif {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #00bfa6;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px) scale(0.9); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media (max-width: 480px) {
+      .card { max-width: 95%; }
+      .card h2 { font-size: 1.4rem; }
+      .links a, .share-buttons a, .share-buttons button { font-size: 0.85rem; padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80" alt="Desain Website Profesional">
+    <div class="card-content">
+      <h2>WebSite Design</h2>
+      <p>
+        Layanan pembuatan website profesional dengan tampilan <strong>modern, lembut, dan responsif</strong> untuk kebutuhan
+        <strong>UMKM</strong> dan <strong>Bisnis</strong>.  
+        Didesain secara eksklusif untuk mencerminkan identitas brand Anda.
+      </p>
+
+      <div class="links">
+        <a href="https://puguhjogja.alwaysdata.net" target="_blank">🌐 Lihat Desain Web UMKM</a>
+        <a href="https://webdesiner.alwaysdata.net" target="_blank">💼 Lihat Desain Web Bisnis</a>
+        <a href="https://wa.me/6289653135369?text=Halo%20MAS%20PUGUH,%20saya%20tertarik%20dengan%20layanan%20WebSite%20Design%20Anda!"
+           target="_blank" style="background:#00bfa6;">📱 Hubungi via WhatsApp</a>
+      </div>
+
+      <div class="share-buttons">
+        <a class="wa" href="https://api.whatsapp.com/send?text=🌐 *WebSite Design MAS PUGUH*%0ADesain website profesional untuk UMKM & Bisnis.%0A👉 https://puguhjogja.alwaysdata.net" target="_blank">Share via WhatsApp</a>
+        <a class="mail" href="mailto:?subject=WebSite Design - MAS PUGUH&body=Lihat desain elegan untuk bisnis Anda:%0Ahttps://puguhjogja.alwaysdata.net" target="_blank">Share via Email</a>
+        <button class="copy" onclick="copyLink()">🔗 Share Link</button>
+      </div>
+
+      <div class="contact">
+        📧 Email langsung: <a href="mailto:puguh.jogja.x@gmail.com">puguh.jogja.x@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="notif">✅ Link berhasil disalin!</div>
+
+  <script>
+    function copyLink() {
+      const link = "https://puguhjogja.alwaysdata.net";
+      navigator.clipboard.writeText(link).then(() => {
+        const notif = document.getElementById("notif");
+        notif.style.opacity = "1";
+        setTimeout(() => notif.style.opacity = "0", 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
+
